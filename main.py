@@ -9,3 +9,11 @@ try:
     second_file.close()
 except Exception as e:
     print(e)
+
+try:
+    with open('text.txt', 'r') as file:
+        words = file.read().split()
+        word_count = len(words)
+        print(f"Number of words in the file: {word_count}")
+except Exception as e:
+    print(e)
